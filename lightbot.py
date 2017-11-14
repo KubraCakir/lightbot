@@ -14,6 +14,17 @@ direction = { 0:'north', 1:'east', 2:'south', 3:'west' }
 maxX = len(height) - 1
 maxY = len(height[0]) - 1
 
+def heightDifferenceForward():
+           if yon == 0 and y<maxY:
+                      return height[x][y+1] - height[x][y]
+           elif yon == 1 and x<maxX:
+                      return height [x+1][y] - height[x][y]
+           elif yon == 2 and y>0:
+                      return height[x][y-1] - height[x][y]
+           elif yon == 3 and x>0:
+                      return height[x-1][y] - height[x][y]
+           return 0
+
 
 
 komut = ""
@@ -55,5 +66,4 @@ while komut != "q":
             
     elif komut != "q":
         print("This command is not known")
-        
 print("As I exit now, my orientation is", direction[yon])        
