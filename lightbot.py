@@ -47,9 +47,9 @@ while komut != "q":
         if ( isBlue[x][y] == True ):
             print("I am switching on or off")
             if ( isOn[x][y] == True ):
-                isOn[x][y] = False
+                 isOn[x][y] = False
             else:
-                isOn[x][y] = True
+                 isOn[x][y] = True
         else:
             print("You are trying to light up a gray box. I can't do it")
             
