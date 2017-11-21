@@ -35,7 +35,6 @@ def areAllLightsOn():
                         return False
                 elif isBlue[x][y] == False:
                     return False
-                
                 return 0
 
 
