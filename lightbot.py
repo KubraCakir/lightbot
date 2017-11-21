@@ -25,6 +25,19 @@ def heightDifferenceForward():
                       return height[x-1][y] - height[x][y]
            return 0
 
+def areAllLightsOn():
+           for x in range(len(isBlue)):
+            for y in range(len(isBlue[0])):
+                if isBlue[x][y] == True:
+                    if isOn[x][y] == True:
+                        return True
+                    elif isOn[x][y] == False:
+                        return False
+                elif isBlue[x][y] == False:
+                    return False
+                
+                return 0
+
 
 
 komut = ""
